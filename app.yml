@@ -1,0 +1,4 @@
+mongo:
+  server: "mongodb://localhost:27017"
+  database: "global"
+  connect_timeout: 10
