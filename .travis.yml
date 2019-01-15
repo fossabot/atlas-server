@@ -1,14 +1,9 @@
 language: go
-go:
-  - 1.11.x
-  - master
-os:
-  - linux
-  - osx
-dist: trusty
 sudo: false
 install: true
 
+before_install:
+  - env GO111MODULE=on go mod download
 jobs:
   include:
     - stage: build
